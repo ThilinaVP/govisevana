@@ -11,6 +11,7 @@
                 </div>
                 <h1>Hello</h1>
                 <h2>Thilina Peduruhewa</h2>
+                <hr>
             </div>
             <table id="farmer-card-stats">
                 <tbody>
@@ -36,70 +37,76 @@
         <div class="card-line">
             <div class="dash-card">
                 <h1>Add stock</h1>
-                <img src="../assets/stock.png" alt="">
+                <img src="../assets/icons/stock.png" alt="">
             </div>
             <div class="dash-card">
-                <h1>Offers Sentk</h1>
-                <img src="../assets/stock.png" alt="">
+                <h1>Offers Sent</h1>
+                <img src="../assets/icons/offer.png" alt="">
             </div>
             <div class="dash-card">
                 <h1>Earnings</h1>
-                <img src="../assets/stock.png" alt="">
+                <img src="../assets/icons/earn.png" alt="">
             </div>
         </div>
         <div class="card-line">
             <div class="dash-card">
                 <h1>Buyer Requests</h1>
-                <img src="../assets/stock.png" alt="">
+                <img src="../assets/icons/req.png" alt="">
             </div>
             <div class="dash-card">
                 <h1>Contact Admins</h1>
-                <img src="../assets/stock.png" alt="">
+                <img src="../assets/icons/admin.png" alt="">
             </div>
             <div class="dash-card">
                 <h1>Analytics</h1>
-                <img src="../assets/stock.png" alt="">
+                <img src="../assets/icons/analytics.png" alt="">
             </div>
         </div>
         <div id="order-table">
-        <h1>current orders</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Order ID</th>
-                    <th>Delivery Date</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>001</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+            <h1>current orders</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Delivery Date</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id = "edit-profile-card">
+            <h1>Farmer</h1>
+            <hr>
+            <h2>Edit profile</h2>
         </div>
     </div>
+    
 </body>
 </html>

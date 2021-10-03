@@ -1,0 +1,18 @@
+.full{
+    display: flex;
+    background: darkgoldenrod;
+    /* height: 100%;
+    width: 100%; */
+}
+
+.left{
+    background: blueviolet;
+    height: 100px;
+    width: 200px;
+}
+.right{
+    background: crimson;
+    float: left;
+    /* width: 500px; */
+    height: 500px;
+}
