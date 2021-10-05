@@ -86,9 +86,11 @@
     <!--stock from best selling farmers-->
     <div class="farmer-stock">
         <!--row 1 start-->
+        <?php for( $j = 0; $j<2; $j++ ){ ?>
         <div class="row">
-            <div class="column">
-                <!--stock card1-->
+            
+                <?php for( $i = 0; $i<4; $i++ ){ ?>
+                <div class="column">
                 <a href="stockManagement/SelectStock.php" style="text-decoration:none">
                 <div class="card">
                     <div class="stock-img">
@@ -115,235 +117,28 @@
                         
                     </div>
                 </div>
+                </div>
                 </a>
+                <?php } ?>
+                
                 <!--end of the card1-->
             </div>
-            <div class="column">
-            <!--stock card2-->
-            <a href="stockManagement/SelectStock.php" style="text-decoration:none">
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </a>
-                <!--end of the card2-->
-            </div>
-            <div class="column">
-                <!--stock card3-->
-                <a href="stockManagement/SelectStock.php" style="text-decoration:none">
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-                <!--end of the card3-->
-            </div>
-            <div class="column">
-                <!--stock card4-->
-                <a href="stockManagement/SelectStock.php" style="text-decoration:none">
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-                <!--end of the card4-->
-            </div>
-        </div>
+            <?php } ?>
+            
         <!--end of a row1-->
-        <!--row2 start-->
-        <div class="row">
-            <div class="column">
-                <!--stock card5-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--end of the card5-->
-            </div>
-
-            <div class="column">
-            <!--stock card6-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--end of the card6-->
-            </div>
-
-            <div class="column">
-                <!--stock card7-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card7-->
-            </div>
-
-            <div class="column">
-                <!--stock card8-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card8-->
-            </div>
-        </div>
-        <!--end of a row2-->
-    </div>
-
+       
     <!--For you text-->
     <div class="topic">
         <span class="main-topic">FOR YOU</span>
     </div>
 <!--for you stock posts-->
-<div class="farmer-stock">
-        <!--row 1 start-->
+      <!--row 1 start-->
+      <?php for( $j = 0; $j<2; $j++ ){ ?>
         <div class="row">
-            <div class="column">
-                <!--stock card1-->
+            
+                <?php for( $i = 0; $i<4; $i++ ){ ?>
+                <div class="column">
+                <a href="stockManagement/SelectStock.php" style="text-decoration:none">
                 <div class="card">
                     <div class="stock-img">
                     <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
@@ -369,217 +164,13 @@
                         
                     </div>
                 </div>
+                </div>
+                </a>
+                <?php } ?>
+                
                 <!--end of the card1-->
             </div>
-            <div class="column">
-            <!--stock card2-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--end of the card2-->
-            </div>
-            <div class="column">
-                <!--stock card3-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card3-->
-            </div>
-            <div class="column">
-                <!--stock card4-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card4-->
-            </div>
-        </div>
-        <!--end of a row1-->
-        <!--row2 start-->
-        <div class="row">
-            <div class="column">
-                <!--stock card5-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--end of the card5-->
-            </div>
-
-            <div class="column">
-            <!--stock card6-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!--end of the card6-->
-            </div>
-
-            <div class="column">
-                <!--stock card7-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card7-->
-            </div>
-
-            <div class="column">
-                <!--stock card8-->
-                <div class="card">
-                    <div class="stock-img">
-                    <img class="stock-img-1" src="landing/images/carrot.jpg" alt="Jane" style="width:100%">
-                    </div>
-                    <div class="container">
-                        <div class="line-1">
-                            <div class="text1">
-                                <p>Carrot 20KG</p>
-                            </div>
-                            <div class="text2">
-                                <p>Rs.3000.00</p>
-                            </div>
-                        </div>
-                        <div class="line-2">
-                            <div class="text1">
-                            <p class="title">Farmer : Nimal</p>
-                            </div>
-                            <div class="text2">
-                                <i class='bx bx-star'></i>
-                                <i class='bx bx-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end of the card8-->
-            </div>
-        </div>
-        <!--end of a row2-->
-    </div>
+            <?php } ?>
     <!--end of for you stocks-->
     </div><!--end of right div-->
 </div>
