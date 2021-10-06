@@ -1,0 +1,17 @@
+drop database govisevana;
+create database govisevana;
+use govisevana;
+create table buyer(buyerID varchar(5) primary key);
+create table farmer(farmerID varchar(5) primary key);
+create table deliveryPerson(deliveryPersonID varchar(5) primary key);
+create table registeredUser(NIC varchar(10) primary key,password varchar(50), name varchar(20),address varchar(100), tpno int(10),buyerID varchar(5),farmerID varchar(5),deliveryPersonID varchar(5),FOREIGN KEY (farmerID) REFERENCES farmer(farmerID),FOREIGN KEY (buyerID) REFERENCES buyer(buyerID),FOREIGN KEY (deliveryPersonID) REFERENCES deliveryPerson(deliveryPersonID));
+create table notification(notifID varchar(10) primary key,catagory varchar(10),NIC varchar(10), FOREIGN KEY (NIC) REFERENCES RegisteredUser(NIC));
+create table review(reviewID varchar(5) primary key, rating decimal(2,1), description varchar(500), farmerId varchar(5), buyerID varchar(5), FOREIGN KEY (farmerID) REFERENCES farmer(farmerID), FOREIGN KEY (buyerID) REFERENCES buyer(buyerID) );
+create table stock(stockID varchar(5) primary key, farmerID varchar(5), expireDate date, catagory varchar(10), qty int(5), fixedPrice decimal(8,2), minBidPrice decimal(8,2),stockStatus varchar(10),FOREIGN KEY (farmerID) REFERENCES farmer(farmerID));
+create table request(RID varchar(5) primary key, buyerID varchar(5), reqStatus varchar(10), reqCatagory varchar(25), reqDescription varchar(1000), expectedDate date,requestStatus varchar(10),FOREIGN KEY (buyerID) REFERENCES buyer(buyerID));
+create table offer(offerID varchar(5) primary key, farmerID varchar(5), offerDescription varchar(2000), offerPrice decimal(8,2), offerStatus varchar(10),FOREIGN KEY (farmerID) REFERENCES farmer(farmerID));
+create table admin(AID varchar(5) primary key, password varchar(50), name varchar(30), address varchar(100), TPno int(10));
+create table complain(complainID varchar(5), description varchar(2000), complainerNIC varchar(10), complaineeNIC varchar(10), complainStatus varchar(20), FOREIGN KEY (complainerNIC) REFERENCES registeredUser(NIC),FOREIGN KEY (complaineeNIC) REFERENCES registeredUser(NIC));
+create table bid(bidID varchar(5) primary key, stockID varchar(5),buyerID varchar(5), bidPrice decimal(8,2), bidStatus varchar(30), FOREIGN KEY (buyerID) REFERENCES buyer(buyerID), FOREIGN KEY (stockID) REFERENCES stock(stockID));
+
+
