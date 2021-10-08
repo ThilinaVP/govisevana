@@ -1,0 +1,29 @@
+drop database govisevana;
+create database govisevana;
+use govisevana;
+create table buyer(buyerID int(5)  primary key auto_increment ,NIC varchar(10) unique not null,password varchar(50) not null, name varchar(20),address varchar(100), tpno int(10),email varchar(100) unique);
+create table farmer(farmerID int(5) primary key auto_increment,NIC varchar(10) unique not null,password varchar(50) not null, name varchar(20),address varchar(100), tpno int(10),email varchar(100) unique);
+create table deliveryPerson(deliveryPersonID int(5) primary key auto_increment,NIC varchar(10),password varchar(50) not null, name varchar(20),address varchar(100), tpno int(10),email varchar(100) unique);
+
+create table farmerNotification(notifID varchar(10) primary key,catagory varchar(10),farmerID int(5), FOREIGN KEY (farmerID) REFERENCES farmer(farmerID));
+create table buyerNotification(notifID varchar(10) primary key,catagory varchar(10),buyerID int(5), FOREIGN KEY (buyerID) REFERENCES buyer(buyerID));
+create table deliveryNotification(notifID varchar(10) primary key,catagory varchar(10),deliveryPersonID int(5), FOREIGN KEY (deliveryPersonID) REFERENCES deliveryPerson(deliveryPersonID));
+
+create table review(reviewID varchar(5) primary key, rating decimal(2,1), description varchar(500), farmerId int(5), buyerID int(5), FOREIGN KEY (farmerID) REFERENCES farmer(farmerID), FOREIGN KEY (buyerID) REFERENCES buyer(buyerID) );
+
+create table stock(stockID int(5) primary key auto_increment, farmerID int(5), expireDate date, catagory varchar(10), qty int(5), fixedPrice decimal(8,2), minBidPrice decimal(8,2),stockStatus varchar(10),FOREIGN KEY (farmerID) REFERENCES farmer(farmerID));
+
+create table request(RID varchar(5) primary key, buyerID int(5), reqStatus varchar(10), reqCatagory varchar(25), reqDescription varchar(1000), expectedDate date,requestStatus varchar(10),FOREIGN KEY (buyerID) REFERENCES buyer(buyerID));
+
+create table offer(offerID int(5) primary key, farmerID int(5), offerDescription varchar(2000), offerPrice decimal(8,2), offerStatus varchar(10),FOREIGN KEY (farmerID) REFERENCES farmer(farmerID));
+
+create table admin(AID varchar(5) primary key, password varchar(50), name varchar(30), address varchar(100), TPno int(10));
+
+create table farmerComplain(complainID varchar(5), description varchar(2000), farmerID int(10), buyerID int(10), complainStatus varchar(20), FOREIGN KEY (farmerID) REFERENCES farmer(farmerID),FOREIGN KEY (buyerID) REFERENCES buyer(buyerID));
+
+create table buyerComplain(complainID varchar(5), description varchar(2000), farmerID int(10), buyerID int(10), complainStatus varchar(20), FOREIGN KEY (farmerID) REFERENCES farmer(farmerID),FOREIGN KEY (buyerID) REFERENCES buyer(buyerID));
+
+
+create table bid(bidID varchar(5) primary key, stockID int(5),buyerID int(5), bidPrice decimal(8,2), bidStatus varchar(30), FOREIGN KEY (buyerID) REFERENCES buyer(buyerID), FOREIGN KEY (stockID) REFERENCES stock(stockID));
+
+
