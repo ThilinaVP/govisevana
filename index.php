@@ -1,5 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+
+include('db/db.php');
+$name;
+session_start();
+// if (isset($_SESSION['email'])) {
+//     $name = $_SESSION['name'];
+// }
+
+?>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,6 +89,10 @@
     <!--end of slideshow-->
     <!--stock from best selling farmers text-->
     <div class="topic">
+        <?php if (isset($_SESSION['email'])) { ?>
+        <span class="main-topic">welcome <?php echo $_SESSION['name']; ?></span>
+        <?php } ?>
+        <br>
         <span class="main-topic">Stocks From Best Selling Farmers</span>
     </div>
 

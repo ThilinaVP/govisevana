@@ -16,7 +16,7 @@
 
 <div class="split left">
 <button class="btn">
-    <a href="">
+    <a href="createAccount.php?cat=buyer">
   <div class="centered">
     <img src="../../assets/icons/buyer.png" alt="buyer">
     <h2>A buyer</h2>
@@ -28,7 +28,7 @@
 
 <div class="split right">
   <button class="btn">
-    <a href="">
+    <a href="createAccount.php?cat=delivery">
   <div class="centered">
     <img src="../../assets/icons/delivery.png" alt="deliveryP">
     <h2>A delivery person</h2>
@@ -41,7 +41,7 @@
 <div class="split mid">
 
   <button class="btn active">
-<a href="">
+<a href="createAccount.php?cat=farmer">
   <div class="centered">
     <img src="../../assets/icons/farmer.png" alt="farmer">
     <h2>A farmer</h2>
